@@ -1,0 +1,6 @@
+,all compounds,size-matched subset,"reference, size-matched"
+median Fsp3,0.733,0.5,ZINC 0.375 | ChEMBL 0.208
+median stereocentres,1.0,3.0,ZINC 1 | ChEMBL 0
+median NN similarity to ZINC,0.25,0.24,
+% below 0.40 vs ZINC,95.6,97.7,
+% below 0.40 vs ChEMBL,90.3,80.0,

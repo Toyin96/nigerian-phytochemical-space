@@ -1,0 +1,5 @@
+,NN to ZINC,NN to ChEMBL
+median nearest-neighbour similarity,0.25,0.224
+% with no neighbour above 0.40,95.6,90.3
+% with no neighbour above 0.60,99.9,98.2
+% with a near-duplicate (>=0.85),0.0,0.5

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+data/raw/zinc250k.csv
+data/raw/EGFR_compounds.csv
