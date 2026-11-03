@@ -55,25 +55,28 @@ similar molecule in each reference library:
 | No neighbour above 0.40 | 95.6% | 90.3% |
 | Near-duplicate present (>= 0.85) | 0.0% | 0.5% |
 
-## Controlling for molecular size
+## Sensitivity analysis: restricting by molecular weight
 
 The Nigerian set skews small and simple: median molecular weight 222, and 610 of 1,813
 compounds have no ring at all. Fatty acids and simple terpenes are abundant. That is a
 confound, because an unbranched fatty acid scores a high Fsp3 for an uninteresting reason and
 may lack a close neighbour in a drug-like library simply because nobody stocks fatty acids.
 
-Repeating the analysis on the subset of every library within molecular weight 250 to 600 with
-at least one ring:
+Repeating the analysis on the subset of every library within molecular weight 250 to 600 Da
+with at least one ring. This is a sensitivity analysis rather than a matched design: the
+subsets share a molecular weight window, but their distributions within it are not
+statistically matched, so the test asks whether the findings survive the restriction rather
+than removing size as a variable.
 
-| | All compounds | Size-matched |
+| | All compounds | MW-restricted |
 |---|---|---|
 | Median Fsp3 | 0.73 | 0.50 (ZINC 0.38, ChEMBL 0.21) |
 | Median stereocentres | 1 | 3 (ZINC 1, ChEMBL 0) |
 | No neighbour above 0.40 vs ZINC | 95.6% | 97.7% |
 | No neighbour above 0.40 vs ChEMBL | 90.3% | 80.0% |
 
-The control weakens the Fsp3 finding, strengthens the stereochemistry finding and leaves the
-novelty finding essentially intact. The drop against ChEMBL is expected: medicinal chemistry
+The restriction weakens the Fsp3 finding, strengthens the stereochemistry finding and leaves
+the novelty finding essentially intact. The drop against ChEMBL is expected: medicinal chemistry
 has drawn on natural product scaffolds for decades.
 
 ## Limitations
